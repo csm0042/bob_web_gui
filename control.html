@@ -17,72 +17,47 @@
         <!--  MENU BAR  -->         
 
         <div class="icon-bar">     
-            <!--<a href="#" onclick="toggleMenu('indexMenuIcon')"><i id="indexMenuIcon" class="fa fa-bars"></i></a> -->
-            <a class="active"><i class="fa fa-home"></i></a>
-            <a href="control.html"><i class="fa fa-bar-chart"></i></a>
+            <!--<a href="#" onclick="toggleMenu('indexMenuIcon')"><i id="indexMenuIcon" class="fa fa-bars"></i></a>-->
+            <a href="index.html"><i class="fa fa-home"></i></a>
+            <a class="active"><i class="fa fa-bar-chart"></i></a>
             <a href="users.html"><i class="fa fa-user"></i></a>
             <a href="calendar.html"><i class="fa fa-calendar"></i></a> 
             <a href="environment.html"><i class="fa fa-thermometer"></i></a> 
         </div>
-        
-        <!-- QUICK STATUS BAR -->
-        
-        <div class="row">
-            <div class="col-3">
-                <div class="occupancy" title="This cell displays whether or not Chris is home">
-                    <p><br>Occupancy status<br>(Chris)</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="occupancy" title="This cell displays whether or not Chris is home">
-                    <p><br>Occupancy status<br>(Nibbler)</p>
-                </div>
-            </div>
-            <div class="col-3">                
-                <div class="occupancy" title="This cell displays whether or not Aiden is home">
-                    <p><br>Occupancy status<br>(Aiden)</p>
-                </div>
-            </div>
-            <div class="col-3">                
-                <div class="occupancy" title="This cell displays whether or not Sarah is home">
-                    <p><br>Occupancy status<br>(Sarah)</p>
-                </div>                
-            </div>
-        </div>
-
-        <hr>
 
         <!-- DEVICE CONTROLS -->     
         
         <div class="row">
-            <div class="col-2">
+            <div class="col-4">
                 <div class="floor-frame">
                     <img class="floor-img" src="img/first-floor.png" alt="First Floor" usemap="#first-floor-map">
                 </div>                
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <button type="button" class="control-pad" id="fylt1-toggle" onclick="toggleDeviceState('fylt1-toggle', 'sound/computerbeep_5.mp3')">Front<br>Patio<br>Light</button><br>
                 <button type="button" class="control-pad" id="cclt1-toggle" onclick="toggleDeviceState('cclt1-toggle', 'sound/computerbeep_5.mp3')">Coat<br>Corner<br>Light</button><br>
                 <button type="button" class="control-pad" id="lrlt1-toggle" onclick="toggleDeviceState('lrlt1-toggle', 'sound/computerbeep_5.mp3')">Living<br>Room<br>Light</button><br>
                 <button type="button" class="control-pad" id="drlt1-toggle" onclick="toggleDeviceState('drlt1-toggle', 'sound/computerbeep_5.mp3')">Dining<br>Room<br>Light</button><br>                                           
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <button type="button" class="control-pad" id="fylt2-toggle" onclick="toggleDeviceState('fylt2-toggle', 'sound/computerbeep_5.mp3')">Front<br>Patio<br>Outlet</button><br>
                 <button type="button" class="control-pad" id="ewlt1-toggle" onclick="toggleDeviceState('ewlt1-toggle', 'sound/computerbeep_5.mp3')">Entry<br>Way<br>Light</button><br>
                 <button type="button" class="control-pad" id="lrlt2-toggle" onclick="toggleDeviceState('lrlt2-toggle', 'sound/computerbeep_5.mp3')">Living<br>Room<br>Lamps</button><br>
                 <button type="button" class="control-pad" id="bylt1-toggle" onclick="toggleDeviceState('bylt1-toggle', 'sound/computerbeep_5.mp3')">Back<br>Yard<br>Light</button><br>                                            
-            </div>              
-            <div class="col-2">
+            </div>   
+        </div>
+        <div class="row">                       
+            <div class="col-4">
                 <div class="floor-frame">
                     <img class="floor-img" src="img/second-floor.png" alt="Second Floor" usemap="#second-floor-map">
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <button type="button" class="control-pad" id="br1lt1-toggle" onclick="toggleDeviceState('br1lt1-toggle', 'sound/computerbeep_5.mp3')">Chris<br>Overhead<br>Light</button><br>
                 <button type="button" class="control-pad" id="br2lt1-toggle" onclick="toggleDeviceState('br2lt1-toggle', 'sound/computerbeep_5.mp3')">Aiden<br>Overhead<br>Light</button><br>
                 <button type="button" class="control-pad" id="br3lt1-toggle" onclick="toggleDeviceState('br3lt1-toggle', 'sound/computerbeep_5.mp3')">Sarah<br>Overhead<br>Table Lamps</button><br>                                           
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <button type="button" class="control-pad" id="br1lt2-toggle" onclick="toggleDeviceState('br1lt2-toggle', 'sound/computerbeep_5.mp3')">Chris<br>Bedside<br>Light</button><br>
                 <button type="button" class="control-pad" id="br2lt2-toggle" onclick="toggleDeviceState('br2lt2-toggle', 'sound/computerbeep_5.mp3')">Aiden<br>Floor<br>Lamp</button><br>
                 <button type="button" class="control-pad" id="br3lt2-toggle" onclick="toggleDeviceState('br3lt2-toggle', 'sound/computerbeep_5.mp3')">Sarah<br>Lava<br>Lamps</button><br>                                            
@@ -105,26 +80,6 @@
             <area shape="rect" title="br3lt1" coords="50,40,195,260" href"br3lt1">
             <area shape="rect" title="br3lt2" coords="50,40,195,260" href"br3lt2">
         </map>
-        
-        <hr>
-
-        <!-- Date / time Display --> 
-        
-        <div class="row">
-            <div class="col-12">
-                <p class="datetime-display" id="datetime" title="Current system datetime">Date</p>
-            </div>
-        </div>
-        
-        <hr>
-        
-        <!-- CALENDAR -->
-
-        <div class="row">
-            <div class="col-12">
-                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=csmaue%40gmail.com&amp;color=%231badf8&amp;src=aidenmaue%40gmail.com&amp;color=%23ffcc00&amp;src=2dttuudaemv60luom6fgfmnf4s%40group.calendar.google.com&amp;color=%23691426&amp;src=sarahemaue%40gmail.com&amp;color=%23cc73e1&amp;src=o1h5ka6ugqn30jehb3ei7pbo2k%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FChicago" style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
 
     </body>
 </html> 
