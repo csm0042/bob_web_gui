@@ -52,18 +52,22 @@ img {
 /* Icon bar at the top of each screen */
 
 .icon-bar {
-    width: 100%;
+    overflow: hidden;
     background-color: #555;
-    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
 
 .icon-bar a {
     float: left;
-    width: 20%;
+    display: block;
+    color: white;
     text-align: center;
+    width: 20%;
     padding: 12px 0;
     transition: all 0.3s ease;
-    color: white;
     font-size: 36px;
 }
 
@@ -73,6 +77,11 @@ img {
 
 .active {
     background-color: #4CAF50 !important;
+}
+
+/* Main content */
+.main {
+    margin-top: 60px; /* Add a top margin to avoid content overlay */
 }
 
 /*  Quick Status row  */
