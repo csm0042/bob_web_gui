@@ -7,7 +7,7 @@ function playSound(sound) {
 
 
 // Home screen refresh
-function indexScreenRefresh(sound) {
+function controlScreenRefresh(sound) {
     getState('fylt1-toggle');
     getState('fylt2-toggle');
     getState('cclt1-toggle');
@@ -22,7 +22,7 @@ function indexScreenRefresh(sound) {
     getState('br2lt2-toggle');
     getState('br3lt1-toggle');
     getState('br3lt2-toggle');
-    systemClock('datetime_index');
+    systemClock('datetime_control');
     playSound(sound);
 }
 

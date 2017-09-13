@@ -12,17 +12,17 @@
         <script src="js/ajax.js"></script>
     </head>
     
-    <body onload="homeScreenRefresh('sound/screenshow.mp3')">
+    <body onload="indexScreenRefresh('sound/screenshow.mp3')">
         <div class="main">
+
             <!--  MENU BAR  -->         
-            <div class="main">
+
             <div class="icon-bar">     
-                <!--<a href="#" onclick="toggleMenu('indexMenuIcon')"><i id="indexMenuIcon" class="fa fa-bars"></i></a> -->
                 <a class="active"><i class="fa fa-home"></i></a>
-                <a href="control.html"><i class="fa fa-bar-chart"></i></a>
-                <a href="users.html"><i class="fa fa-user"></i></a>
+                <a href="control.html"><i class="fa fa-power-off"></i></a>
                 <a href="calendar.html"><i class="fa fa-calendar"></i></a> 
                 <a href="environment.html"><i class="fa fa-thermometer"></i></a> 
+                <a href="users.html"><i class="fa fa-user"></i></a>
             </div>
             
             <!-- QUICK STATUS BAR -->
@@ -52,7 +52,8 @@
 
             <hr>
 
-            <!-- DEVICE CONTROLS -->    
+            <!-- SECOND FLOOR DEVICE CONTROLS -->    
+
             <div class="row">
                 <div class="col-12">
                     <p class="header-text">Second Floor</p>
@@ -81,7 +82,21 @@
                 </div>    
             </div>
 
+            <!-- SECOND FLOOR CLICK MAP -->
+
+            <map name="second-floor-map">
+                <area shape="rect" title="lrlt1" coords="40,275,90,458" href"lrlt1">
+                <area shape="rect" title="lrlt2" coords="95,400,237,460" href"lrlt2">
+                <area shape="rect" title="ewlt1" coords="250,400,300,460" href"ewlt1">
+                <area shape="rect" title="cclt1" coords="290,338,340,400" href"cclt1">
+                <area shape="rect" title="drlt1" coords="50,40,195,260" href"drlt1">
+            </map>
+
+            <!-- DIVIDER BETWEEN FIRST AND SECOND FLOOR DEVICE CONTROLS -->    
+
             <hr>
+
+            <!-- FIRST FLOOR DEVICE CONTROLS -->    
 
             <div class="row">
                     <div class="col-12">
@@ -113,29 +128,25 @@
                 </div>    
             </div>
 
+            <!-- FIRST FLOOR CLICK MAP -->
+
             <map name="first-floor-map">
                 <area shape="rect" title="lrlt1" coords="40,275,90,458" href"lrlt1">
                 <area shape="rect" title="lrlt2" coords="95,400,237,460" href"lrlt2">
                 <area shape="rect" title="ewlt1" coords="250,400,300,460" href"ewlt1">
                 <area shape="rect" title="cclt1" coords="290,338,340,400" href"cclt1">
                 <area shape="rect" title="drlt1" coords="50,40,195,260" href"drlt1">
-            </map>  
+            </map>   
 
-            <map name="second-floor-map">
-                <area shape="rect" title="lrlt1" coords="40,275,90,458" href"lrlt1">
-                <area shape="rect" title="lrlt2" coords="95,400,237,460" href"lrlt2">
-                <area shape="rect" title="ewlt1" coords="250,400,300,460" href"ewlt1">
-                <area shape="rect" title="cclt1" coords="290,338,340,400" href"cclt1">
-                <area shape="rect" title="drlt1" coords="50,40,195,260" href"drlt1">
-            </map> 
+            <!-- DIVIDER BETWEEN FIRST AND SECOND FLOOR DEVICE CONTROLS -->    
             
             <hr>
 
-            <!-- Date / time Display --> 
+            <!-- DATE / TIME DISPLAY --> 
             
             <div class="row">
                 <div class="col-12">
-                    <p class="datetime-display" id="datetime" title="Current system datetime">Date</p>
+                    <p class="datetime-display" id="datetime_index" title="Current system datetime">Date</p>
                 </div>
             </div>
             
