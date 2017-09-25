@@ -8,6 +8,6 @@ function playSound(sound) {
 
 // Home screen refresh
 function userScreenRefresh(sound) {
-    systemClock('datetime_user');
+    systemClock('status-msg');
     playSound(sound);
 }

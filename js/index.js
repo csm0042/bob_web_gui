@@ -22,7 +22,7 @@ function indexScreenRefresh(sound) {
     getState('br2lt2-toggle');
     getState('br3lt1-toggle');
     getState('br3lt2-toggle');
-    systemClock('datetime_index');
+    systemClock('status-msg');
     playSound(sound);
 }
 

@@ -8,6 +8,6 @@ function playSound(sound) {
 
 // Home screen refresh
 function envScreenRefresh(sound) {
-    systemClock('datetime_env');
+    systemClock('status-msg');
     playSound(sound);
 }

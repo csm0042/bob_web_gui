@@ -1,0 +1,11 @@
+#!C:/Program Files/Python36/python.exe
+print("Content-type: text/html")
+print("")
+print("<html>")
+print("<head>")
+print("<title>CGI Test of Python</title>")
+print("</head>")
+print("<body>")
+print("This is a test")
+print("</body>")
+print("</html>")

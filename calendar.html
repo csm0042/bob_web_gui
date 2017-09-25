@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang-"en-US">
     <head>
+        <title>Building Operating Bot (B.O.B.)</title>     
+        <meta charset="UTF-8">   
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="fonts/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/lcars.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/calendar.js"></script>
         <script src="js/datetime.js"></script>
         <script src="js/ajax.js"></script>
@@ -11,34 +14,126 @@
     
     <body onload="calendarScreenRefresh('sound/screenshow.mp3')">
         <div class="main">
-            <div class="icon-bar">
-                <a href="index.html"><i class="fa fa-home"></i></a>
-                <a href="control.html"><i class="fa fa-power-off"></i></a>
-                <a class="active" href="calendar.html"><i class="fa fa-calendar"></i></a> 
-                <a href="environment.html"><i class="fa fa-thermometer"></i></a> 
-                <a href="users.html"><i class="fa fa-user"></i></a>
+            <!-- TOP BAR OF STATUS WINDOW -->
+            <div class="top-bar">
+                <div class="row">
+                    <div class="col-1">
+                        <p class="upper-left-corner"></p>
+                    </div>
+                    <div class="col-11">
+                        <div class="divider-bar">
+                            <div class="color-bar"></div>
+                            <div class="background-bar"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <!-- MAIN AREA OF STATUS WINDOW -->
+            <div class="status-window">
+                <div class="row">
+                    <div class="col-1">
+                        <button type="button" class="status-nav" id="status-nav-1" onclick=""></button>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-9">
+                        <div class="status-display">
+                            <p id="status-msg">Status messages go here.  Status messages go here.  Status messages go here.  Status messages go here.</p>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
 
-            <hr>
-            
-            <!-- Date / time Display --> 
-            
-            <div class="row">
-                <div class="col-12">
-                    <p class="datetime-display" id="datetime_calendar" title="Current system datetime">Date</p>
+            <!-- BOTTOM BAR OF STATUS WINDOW -->
+            <div class="bottom-bar">
+                <div class="row">
+                    <div class="col-1">
+                        <p class="lower-left-corner"></p>
+                    </div>
+                    <div class="col-11">
+                        <div class="divider-bar">
+                            <div class="background-bar"></div>
+                            <div class="color-bar"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <hr>
-            
-            <!-- CALENDAR -->
-
-            <div class="row">
-                <div class="col-12">
-                    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=800&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=csmaue%40gmail.com&amp;color=%231badf8&amp;src=aidenmaue%40gmail.com&amp;color=%23ffcc00&amp;src=2dttuudaemv60luom6fgfmnf4s%40group.calendar.google.com&amp;color=%23691426&amp;src=sarahemaue%40gmail.com&amp;color=%23cc73e1&amp;src=o1h5ka6ugqn30jehb3ei7pbo2k%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FChicago" style="border:solid 1px #777" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+            <!-- TOP BAR OF MAIN WINDOW -->
+            <div class="top-bar">
+                <div class="row">
+                    <div class="col-1">
+                        <p class="upper-left-corner"></p>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-bar">
+                            <a href="index.html"><i class="fa fa-home"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-bar">
+                            <a href="control.html"><i class="fa fa-power-off"></i></a>
+                        </div>
+                    </div>      
+                    <div class="col-2">
+                        <div class="icon-bar">
+                            <a class="active"><i class="fa fa-calendar"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="icon-bar">
+                            <a href="environment.html"><i class="fa fa-thermometer"></i></a>
+                        </div>
+                    </div>        
+                    <div class="col-2">
+                        <div class="icon-bar">
+                            <a href="users.html"><i class="fa fa-user"></i></a>
+                        </div>
+                    </div>    
+                    <div class="col-1">
+                        <div class="divider-bar">
+                            <div class="color-bar"></div>
+                            <div class="background-bar"></div>
+                        </div>
+                    </div>                                       
                 </div>
             </div>
+
+            <!-- MAIN AREA OF MAIN WINDOW -->
+            <div class="main-window">
+                <div class="row">
+                    <div class="col-1">
+                        <button type="button" class="main-nav" id="main-nav-1" onclick=""></button>
+                        <button type="button" class="main-nav" id="main-nav-2" onclick=""></button>
+                        <button type="button" class="main-nav" id="main-nav-3" onclick=""></button>
+                        <button type="button" class="main-nav" id="main-nav-4" onclick=""></button>
+                    </div>
+
+                    <div class="col-1"></div>
+
+                    <div class="col-9">
+                            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=800&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=csmaue%40gmail.com&amp;color=%231badf8&amp;src=aidenmaue%40gmail.com&amp;color=%23ffcc00&amp;src=2dttuudaemv60luom6fgfmnf4s%40group.calendar.google.com&amp;color=%23691426&amp;src=sarahemaue%40gmail.com&amp;color=%23cc73e1&amp;src=o1h5ka6ugqn30jehb3ei7pbo2k%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FChicago" style="border:solid 1px #777" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+                        </div>                   
+
+                    <div class="col-1"></div> 
+                </div>
+            </div>
+
+            <!-- BOTTOM BAR OF MAIN WINDOW -->
+            <div class="bottom-bar">
+                <div class="row">
+                    <div class="col-1">
+                        <p class="lower-left-corner"></p>
+                    </div>
+                    <div class="col-11">
+                        <div class="divider-bar">
+                            <div class="background-bar"></div>
+                            <div class="color-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </body>
 </html> 
