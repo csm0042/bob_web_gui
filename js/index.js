@@ -7,22 +7,22 @@ function playSound(sound) {
 
 
 // Home screen refresh
-function indexScreenRefresh(sound) {
-    getState('fylt1-toggle');
-    getState('fylt2-toggle');
-    getState('cclt1-toggle');
-    getState('ewlt1-toggle');
-    getState('lrlt1-toggle');
-    getState('lrlt2-toggle');
-    getState('drlt1-toggle');
-    getState('bylt1-toggle');
-    getState('br1lt1-toggle');
-    getState('br1lt2-toggle');
-    getState('br2lt1-toggle');
-    getState('br2lt2-toggle');
-    getState('br3lt1-toggle');
-    getState('br3lt2-toggle');
-    systemClock('status-msg');
+function screenRefresh(sound) {
+    //getState('fylt1-toggle');
+    //getState('fylt2-toggle');
+    //getState('cclt1-toggle');
+    //getState('ewlt1-toggle');
+    //getState('lrlt1-toggle');
+    //getState('lrlt2-toggle');
+    //getState('drlt1-toggle');
+    //getState('bylt1-toggle');
+    //getState('br1lt1-toggle');
+    //getState('br1lt2-toggle');
+    //getState('br2lt1-toggle');
+    //getState('br2lt2-toggle');
+    //getState('br3lt1-toggle');
+    //getState('br3lt2-toggle');
+    systemClock('system-time');
     playSound(sound);
 }
 
