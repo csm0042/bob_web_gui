@@ -68,8 +68,8 @@ td {
 
 body {
     line-height: 1;
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #000;
 }
 
 ol,
@@ -205,6 +205,10 @@ a:hover {
 
 .text-align-right {
     text-align: right;
+}
+
+.add-padding-right {
+    padding-right: 10px;
 }
   
 h1 {
@@ -1797,7 +1801,7 @@ a.lcars-button {
     color: #000;
     text-decoration: none;
     text-align: center;
-    background: #f90;
+    /*background: #f90;*/
     border: none;
     cursor: pointer;
 }

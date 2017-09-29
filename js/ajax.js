@@ -77,15 +77,15 @@ function setState(id, state) {
         }
     };
     // USING PHP APPROACH VIA DATABASE
-    //var url = "php/set_state.php?";
-    //xhttp.open("POST", url, true); 
-    //xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    //xhttp.send("devname=" + id_sep[0] + "&devcmd=" + state);
+    var url = "php/set_state.php?";
+    xhttp.open("POST", url, true); 
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("devname=" + id_sep[0] + "&devcmd=" + state);
 
     // USING PYTHON APPROACH WITH DIRECT MSG TO DEVICE
-    var url = "cgi-bin/wemo_set_state.py?";
-    xhttp.open("POST", url + "devname=" + dev_name + + "&devaddr=" + dev_addr + "&devcmd=" + state, true);
-    xhttp.send();
+    //var url = "cgi-bin/wemo_set_state.py?";
+    //xhttp.open("POST", url + "devname=" + dev_name + + "&devaddr=" + dev_addr + "&devcmd=" + state, true);
+    //xhttp.send();
 }
 
 

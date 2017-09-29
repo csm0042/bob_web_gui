@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang-"en-US">
+    <head>
+        <title>Building Operating Bot (B.O.B.)</title>     
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="fonts/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/lcars.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/status_window.js"></script>
+        <script src="js/main_window.js"></script>
+        <script src="js/datetime.js"></script>
+        <script src="js/devices.js"></script>
+        <script src="js/ajax.js"></script>
+    </head>
+    <body>
+
+
+        <!-- MAIN DISPLAY AREA 
+        ==================================================================-->
+        <div class="lcars-row">
+            <div class="lcars-column u-1-4">
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="fylt1-state" onclick="fylt1.toggleState('fylt1-state')">Front Patio<br>Light</button><br>
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="fylt2-state" onclick="fylt2.toggleState('fylt2-state')">Front Patio<br>Outlet</button><br>
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="ewlt1-state" onclick="ewlt1.toggleState('ewlt1-state')">Entry Way<br>Light</button><br>
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="cclt1-state" onclick="cclt1.toggleState('cclt1-state')">Coat Corner<br>Light</button><br>   
+            </div>
+            <div class="lcars-column u-1-4">
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="lrlt1-state" onclick="lrlt1.toggleState('lrlt1-state')">Living Room<br>Light</button><br>  
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="lrlt2-state" onclick="lrlt2.toggleState('lrlt2-state')">Living Room<br>Lamps</button><br> 
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="drlt1-state" onclick="drlt1.toggleState('drlt1-state')">Dining Room<br>Light</button><br>
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="bylt1-state" onclick="bylt1.toggleState('bylt1-state')">Back Yard<br>Light</button><br>
+            </div>
+            <div class="lcars-column u-1-4">
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="br1lt1-state" onclick="br1lt1.toggleState('br1lt1-state')">Chris Overhead<br>Light</button><br>
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="br2lt1-state" onclick="br2lt1.toggleState('br2lt1-state')">Aiden Overhead<br>Light</button><br>       
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="br3lt1-state" onclick="br3lt1.toggleState('br3lt1-state')">Sarah Overhead<br>Light</button><br> 
+            </div>
+            <div class="lcars-column u-1-4">
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="br1lt2-state" onclick="br1lt2.toggleState('br1lt2-state')">Chris Bedside<br>Lamp</button><br>   
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="br2lt2-state" onclick="br2lt2.toggleState('br2lt2-state')">Aiden Bedside<br>Lamp</button><br>                                   
+                <button type="button" class="lcars-button radius fixed-size lcars-white-by" id="br3lt2-state" onclick="br3lt2.toggleState('br3lt2-state')">Sarah Bedside<br>Lamp</button><br>
+            </div>                        
+        </div>                    
+
+    </body>
+</html>

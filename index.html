@@ -7,8 +7,12 @@
         <link rel="stylesheet" href="fonts/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/lcars.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script src="js/index.js"></script>
+        <script src="js/status_window.js"></script>
+        <script src="js/main_window.js"></script>
         <script src="js/datetime.js"></script>
+        <script src="js/devices.js"></script>
         <script src="js/ajax.js"></script>
     </head>
     
@@ -22,7 +26,7 @@
             <div class="lcars-row spaced">
                 <!-- TOP LEFT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow left top lcars-orange-bg">
+                <div class="lcars-column u-1-8 lcars-elbow left top lcars-blue-bg">
                     <a href="#"></a>
                 </div>
                 <!-- TOP DIVIDER AND BUTTONS
@@ -33,13 +37,13 @@
                             <p id="system-time">System Time</p>
                         </div>
                         <div class="lcars-column u-1-2 right full-width text-align-right lcars-tan-color">
-                            <p>B.O.B. Home Automation System</p>
+                            <p id="status-screen-title">B.O.B. Home Automation System</p>
                         </div>  
                     </div>                      
                 </div>
                 <!-- TOP RIGHT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow right top lcars-orange-bg">
+                <div class="lcars-column u-1-8 lcars-elbow right top lcars-blue-bg">
                     <a href="#"></a> 
                 </div>
             </div>
@@ -48,44 +52,29 @@
             <!-- STATUS WINDOW CENTER SECTION 
             ==================================================================-->
             <div class="lcars-row">
-
                 <!-- LEFT MENU 
                 ==================================================================-->
                 <div class="lcars-column u-1-8">
                     <ul class="lcars-menu">
-                        <li class="lcars-blue-bg tall"><a href="#">System<br>Status</a></li>
-                        <li class="lcars-blue-bg tall"><a href="#">System<br>Diagnostics</a></li>
+                        <li class="lcars-blue-bg tall" id='status-nav1'><a href="#" onclick="statusNav1()">System<br>Status</a></li>
+                        <li class="lcars-blue-bg tall" id='status-nav2'><a href="#" onclick="statusNav2()">System<br>Diagnostics</a></li>
                     </ul>
                 </div>
 
-                <!-- STATUS DISPLAY AREA 
+                <!-- STATUS DISPLAY AREA CONTENT
                 ==================================================================-->
                 <div class="lcars-column u-6-8">
-                    <div class="lcars-row">
-                        <div class="lcars-column u-1-4">
-                            <p id="status-text">Status here</p>
-                        </div>
-                        <div class="lcars-column u-1-4">
-                            <p id="status-text2">Status here</p>
-                        </div>
-                        <div class="lcars-column u-1-4">
-                            <p id="status-text">Status here</p>
-                        </div>
-                        <div class="lcars-column u-1-4">
-                            <p id="status-text2">Status here</p>
-                        </div>                        
-                    </div>
+                    <iframe id="status-window-frame" src="status_blank.html" height="150px" width="100%" style="border:none;"></iframe>
                 </div>
 
                 <!-- RIGHT MENU RESERVED SPACE 
                 ==================================================================-->
                 <div class="lcars-column u-1-8">
                     <ul class="lcars-menu right">
-                        <li class="lcars-blue-bg tall"><a href="#">Enviro<br>Status</a></li>
-                        <li class="lcars-blue-bg tall"><a href="#"></a></li>
+                        <li class="lcars-blue-bg tall" id='status-nav3'><a href="#" onclick="statusNav3()">Enviro<br>Status</a></li>
+                        <li class="lcars-blue-bg tall" id='status-nav4'><a href="#" onclick="statusNav4()">_</a></li>
                     </ul>
                 </div>
-                
             </div>
 
 
@@ -94,7 +83,7 @@
             <div class="lcars-row spaced">
                 <!-- BOTTOM LEFT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow left bottom lcars-orange-bg">
+                <div class="lcars-column u-1-8 lcars-elbow left bottom lcars-blue-bg">
                     <a href="#"></a>
                 </div>
                 <!-- BOTTOM DIVIDER AND BUTTONS
@@ -103,7 +92,7 @@
                 </div>
                 <!-- BOTTOM RIGHT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow right bottom lcars-orange-bg">
+                <div class="lcars-column u-1-8 lcars-elbow right bottom lcars-blue-bg">
                     <a href="#"></a> 
                 </div>
             </div>
@@ -117,7 +106,7 @@
             <div class="lcars-row spaced">
                 <!-- TOP LEFT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow left top lcars-orange-bg">
+                <div class="lcars-column u-1-8 lcars-elbow left top lcars-blue-bg">
                     <a href="#"></a>
                 </div>
                 <!-- TOP DIVIDER AND BUTTONS
@@ -125,13 +114,13 @@
                 <div class="lcars-column u-6-8 lcars-divider lcars-white-blue-divide">
                     <div class="lcars-row">
                         <div class="lcars-column u-1-1 right full-width text-align-right lcars-tan-color">
-                            <p id="screen-title">Device Control</p>
+                            <p id="main-screen-title"></p>
                         </div>  
                     </div>                      
                 </div>
                 <!-- TOP RIGHT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow right top lcars-orange-bg">
+                <div class="lcars-column u-1-8 lcars-elbow right top lcars-blue-bg">
                     <a href="#"></a> 
                 </div>
             </div>            
@@ -140,46 +129,21 @@
             <!-- MAIN WINDOW 
             ==================================================================-->
             <div class="lcars-row">
-
                 <!-- LEFT MENU 
                 ==================================================================-->
                 <div class="lcars-column u-1-8">
                     <ul class="lcars-menu">
-                        <li class="lcars-blue-bg tall"><a href="#">Home</a></li>
-                        <li class="lcars-blue-bg tall"><a href="#">System<br>Control</a></li>
-                        <li class="lcars-blue-bg tall"><a href="#">Crew<br>Status</a></li>
-                        <li class="lcars-blue-bg tall"><a href="#"></a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav1'><a href="#" onclick="mainNav1()">Home</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav2'><a href="#" onclick="mainNav2()">System<br>Control</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav3'><a href="#" onclick="mainNav3()">Crew<br>Status</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav4'><a href="#" onclick="mainNav4()"></a></li>
                     </ul>
                 </div>
             
-
-                <!-- MAIN DISPLAY AREA 
+                <!-- MAIN WINDOW CONTENT
                 ==================================================================-->
                 <div class="lcars-column u-6-8">
-                    <div class="lcars-row">
-                        <div class="lcars-column u-1-4">
-                            <button type="button" class="lcars-button radius fixed-size" id="fylt1-toggle" onclick="toggleDeviceState('fylt1-toggle', 'sound/computerbeep_5.mp3')">Front Patio<br>Light</button><br>
-                            <button type="button" class="lcars-button radius fixed-size" id="fylt2-toggle" onclick="toggleDeviceState('fylt2-toggle', 'sound/computerbeep_5.mp3')">Front Patio<br>Outlet</button><br>
-                            <button type="button" class="lcars-button radius fixed-size" id="ewlt1-toggle" onclick="toggleDeviceState('ewlt1-toggle', 'sound/computerbeep_5.mp3')">Entry Way<br>Light</button><br>
-                            <button type="button" class="lcars-button radius fixed-size" id="cclt1-toggle" onclick="toggleDeviceState('cclt1-toggle', 'sound/computerbeep_5.mp3')">Coat Corner<br>Light</button><br>   
-                        </div>
-                        <div class="lcars-column u-1-4">
-                            <button type="button" class="lcars-button radius fixed-size" id="lrlt1-toggle" onclick="toggleDeviceState('lrlt1-toggle', 'sound/computerbeep_5.mp3')">Living Room<br>Light</button><br>  
-                            <button type="button" class="lcars-button radius fixed-size" id="lrlt2-toggle" onclick="toggleDeviceState('lrlt2-toggle', 'sound/computerbeep_5.mp3')">Living Room<br>Lamps</button><br> 
-                            <button type="button" class="lcars-button radius fixed-size" id="drlt1-toggle" onclick="toggleDeviceState('drlt1-toggle', 'sound/computerbeep_5.mp3')">Dining Room<br>Light</button><br>
-                            <button type="button" class="lcars-button radius fixed-size" id="bylt1-toggle" onclick="toggleDeviceState('bylt1-toggle', 'sound/computerbeep_5.mp3')">Back Yard<br>Light</button><br>
-                        </div>
-                        <div class="lcars-column u-1-4">
-                            <button type="button" class="lcars-button radius fixed-size" id="br1lt1-toggle" onclick="toggleDeviceState('br1lt1-toggle', 'sound/computerbeep_5.mp3')">Chris Overhead<br>Light</button><br>
-                            <button type="button" class="lcars-button radius fixed-size" id="br2lt1-toggle" onclick="toggleDeviceState('br2lt1-toggle', 'sound/computerbeep_5.mp3')">Aiden Overhead<br>Light</button><br>       
-                            <button type="button" class="lcars-button radius fixed-size" id="br3lt1-toggle" onclick="toggleDeviceState('br3lt1-toggle', 'sound/computerbeep_5.mp3')">Sarah Overhead<br>Light</button><br> 
-                        </div>
-                        <div class="lcars-column u-1-4">
-                            <button type="button" class="lcars-button radius fixed-size" id="br1lt2-toggle" onclick="toggleDeviceState('br1lt2-toggle', 'sound/computerbeep_5.mp3')">Chris Bedside<br>Lamp</button><br>   
-                            <button type="button" class="lcars-button radius fixed-size" id="br2lt2-toggle" onclick="toggleDeviceState('br2lt2-toggle', 'sound/computerbeep_5.mp3')">Aiden Bedside<br>Lamp</button><br>                                   
-                            <button type="button" class="lcars-button radius fixed-size" id="br3lt2-toggle" onclick="toggleDeviceState('br3lt2-toggle', 'sound/computerbeep_5.mp3')">Sarah Bedside<br>Lamp</button><br>
-                        </div>                        
-                    </div>                    
+                    <iframe id="main-window-frame" src="main_blank.html" height="300px" width="100%" style="border:none;"></iframe>
                 </div>
             
 
@@ -187,25 +151,21 @@
                 ==================================================================-->
                 <div class="lcars-column u-1-8">
                     <ul class="lcars-menu right">
-                        <li class="lcars-blue-bg tall"><a href="#">Enviro<br>Control</a></li>
-                        <li class="lcars-blue-bg tall"><a href="#">Security<br>Control</a></li>
-                        <li class="lcars-blue-bg tall"><a href="#"></a></li>
-                        <li class="lcars-blue-bg tall"><a href="#"></a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav5'><a href="#" onclick="mainNav5()">Enviro<br>Control</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav6'><a href="#" onclick="mainNav6()">Security<br>Control</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav7'><a href="#" onclick="mainNav7()"></a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav8'><a href="#" onclick="mainNav8()"></a></li>
                     </ul>
                 </div>
-
             </div>            
             
-
-
-
 
             <!-- BOTTOM BORDER OF MAIN WINDOW 
             ==================================================================-->
             <div class="lcars-row">
                 <!-- BOTTOM LEFT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow left bottom lcars-orange-bg">
+                <div class="lcars-column u-1-8 lcars-elbow left bottom lcars-blue-bg">
                     <a href="#"></a>
                 </div>
                 <!-- BOTTOM DIVIDER AND BUTTONS
@@ -214,11 +174,10 @@
                 </div>
                 <!-- BOTTOM RIGHT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow right bottom lcars-orange-bg">
+                <div class="lcars-column u-1-8 lcars-elbow right bottom lcars-blue-bg">
                     <a href="#"></a> 
                 </div>
             </div>
-            
             
         </div>
     </body>
