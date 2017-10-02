@@ -18,7 +18,7 @@ var fylt1 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -43,7 +43,7 @@ var fylt2 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -68,7 +68,7 @@ var ewlt1 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -93,7 +93,7 @@ var cclt1 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -118,7 +118,7 @@ var lrlt1 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -143,7 +143,7 @@ var lrlt2 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -168,7 +168,7 @@ var drlt1 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -193,7 +193,7 @@ var bylt1 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -218,7 +218,7 @@ var br1lt1 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -243,7 +243,7 @@ var br1lt2 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -268,7 +268,7 @@ var br2lt1 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -293,7 +293,7 @@ var br2lt2 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -318,7 +318,7 @@ var br3lt1 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());
@@ -343,7 +343,7 @@ var br3lt2 = (function () {
             state = 'OFF'
             document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
         }
-        updateSystemStatus();
+        playSound('sound/computerbeep_4.mp3');
     };
     return pub; // expose externally
 }());

@@ -12,8 +12,6 @@
         <script src="js/status_window.js"></script>
         <script src="js/main_window.js"></script>
         <script src="js/datetime.js"></script>
-        <script src="js/devices.js"></script>
-        <script src="js/ajax.js"></script>
     </head>
     
     <body onload="screenRefresh('sound/screenshow.mp3')">
@@ -31,7 +29,7 @@
                 </div>
                 <!-- TOP DIVIDER AND BUTTONS
                 ==================================================================-->
-                <div class="lcars-column u-6-8 lcars-divider lcars-white-blue-divide">
+                <div class="lcars-column u-6-8 lcars-divider lcars-orange-grayBlue-divide">
                     <div class="lcars-row">
                         <div class="lcars-column u-1-2 lcars-peach-color">
                             <p id="system-time">System Time</p>
@@ -88,7 +86,7 @@
                 </div>
                 <!-- BOTTOM DIVIDER AND BUTTONS
                 ==================================================================-->
-                <div class="lcars-column u-6-8 lcars-divider bottom lcars-white-blue-divide">
+                <div class="lcars-column u-6-8 lcars-divider bottom lcars-orange-grayBlue-divide">
                 </div>
                 <!-- BOTTOM RIGHT ELBOW
                 ==================================================================-->    
@@ -136,14 +134,14 @@
                         <li class="lcars-blue-bg tall" id='main-nav1'><a href="#" onclick="mainNav1()">Home</a></li>
                         <li class="lcars-blue-bg tall" id='main-nav2'><a href="#" onclick="mainNav2()">System<br>Control</a></li>
                         <li class="lcars-blue-bg tall" id='main-nav3'><a href="#" onclick="mainNav3()">Crew<br>Status</a></li>
-                        <li class="lcars-blue-bg tall" id='main-nav4'><a href="#" onclick="mainNav4()"></a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav4'><a href="#" onclick="mainNav4()">Enviro<br>Control</a></li>
                     </ul>
                 </div>
             
                 <!-- MAIN WINDOW CONTENT
                 ==================================================================-->
                 <div class="lcars-column u-6-8">
-                    <iframe id="main-window-frame" src="main_blank.html" height="300px" width="100%" style="border:none;"></iframe>
+                    <iframe id="main-window-frame" src="main_blank.html" height="310px" width="100%" style="border:none;"></iframe>
                 </div>
             
 
@@ -151,10 +149,10 @@
                 ==================================================================-->
                 <div class="lcars-column u-1-8">
                     <ul class="lcars-menu right">
-                        <li class="lcars-blue-bg tall" id='main-nav5'><a href="#" onclick="mainNav5()">Enviro<br>Control</a></li>
-                        <li class="lcars-blue-bg tall" id='main-nav6'><a href="#" onclick="mainNav6()">Security<br>Control</a></li>
-                        <li class="lcars-blue-bg tall" id='main-nav7'><a href="#" onclick="mainNav7()"></a></li>
-                        <li class="lcars-blue-bg tall" id='main-nav8'><a href="#" onclick="mainNav8()"></a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav7'><a href="#" onclick="mainNav7()">Crew<br>Schedule</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav8'><a href="#" onclick="mainNav8()">Security<br>Control</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav9'><a href="#" onclick="mainNav9()"></a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav10'><a href="#" onclick="mainNav10()"></a></li>
                     </ul>
                 </div>
             </div>            

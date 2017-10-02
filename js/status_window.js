@@ -104,19 +104,3 @@ function statusUpdate4() {
         document.getElementById('status-window-frame').src = "status_blank.html"
     };
 };
-
-
-
-
-
-
-
-
-function statusUpdate1a() {
-    document.getElementById('status-text1').innerHTML = "Chris<br>Deanna<br>Aiden<br>Sarah<br>Max<br>Nibbler";
-    document.getElementById('status-text2').innerHTML = "Home<br>Away<br>Home<br>Home<br>Home<br>Home";
-    document.getElementById('status-text3').innerHTML = "fylt1<br>fylt2<br>ewlt1<br>cclt1<br>lrlt1<br>lrlt2<br>drlt1<br>bylt1";
-    document.getElementById('status-text4').innerHTML = fylt1.getState() + "<br>" + fylt2.getState() + "<br>" + ewlt1.getState() + "<br>" + cclt1.getState() + "<br>" + lrlt1.getState() + "<br>" + lrlt2.getState() + "<br>" +  drlt1.getState() + "<br>" + bylt1.getState();
-    document.getElementById('status-text5').innerHTML = "br1lt1<br>br1lt2<br>br2lt1<br>br2lt2<br>br3lt1<br>br3lt2";
-    document.getElementById('status-text6').innerHTML = br1lt1.getState() + "<br>" + br1lt2.getState() + "<br>" + br2lt1.getState() + "<br>" + br2lt2.getState() + "<br>" + br3lt1.getState() + "<br>" + br3lt2.getState();
-};
