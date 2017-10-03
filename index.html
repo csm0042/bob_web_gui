@@ -5,7 +5,11 @@
         <meta charset="UTF-8">   
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="fonts/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/lcars.css">
+
+        <link rel="stylesheet" media="screen and (max-width: 400px)" href="css/lcars_mobile.css" />
+        <link rel="stylesheet" media="screen and (min-width: 401px) and (max-width: 700px)" href="css/lcars_tablet.css" />
+        <link rel="stylesheet" media="screen and (min-width: 701px)" href="css/lcars.css" />
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script src="js/index.js"></script>
@@ -18,162 +22,113 @@
 
         <div class="lcars-container">
             
-
             <!-- TOP BORDER OF STATUS WINDOW 
             ==================================================================-->
             <div class="lcars-row spaced">
                 <!-- TOP LEFT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow left top lcars-blue-bg">
+                <div id="status-top-left-elbow" class="lcars-column u-1-8 t-2-8 m-2-8 lcars-elbow left top lcars-blue-bg">
                     <a href="#"></a>
                 </div>
                 <!-- TOP DIVIDER AND BUTTONS
                 ==================================================================-->
-                <div class="lcars-column u-6-8 lcars-divider lcars-orange-grayBlue-divide">
+                <div id="status-top-divider" class="lcars-column u-7-8 t-6-8 m-6-8 lcars-divider lcars-orange-grayBlue-divide">
                     <div class="lcars-row">
-                        <div class="lcars-column u-1-2 lcars-peach-color">
-                            <p id="system-time">System Time</p>
-                        </div>
-                        <div class="lcars-column u-1-2 right full-width text-align-right lcars-tan-color">
+                        <div class="lcars-column u-1-1 right full-width text-align-right text-center-vert lcars-tan-color">
                             <p id="status-screen-title">B.O.B. Home Automation System</p>
                         </div>  
                     </div>                      
                 </div>
-                <!-- TOP RIGHT ELBOW
-                ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow right top lcars-blue-bg">
-                    <a href="#"></a> 
-                </div>
             </div>
-
-
             <!-- STATUS WINDOW CENTER SECTION 
             ==================================================================-->
             <div class="lcars-row">
                 <!-- LEFT MENU 
                 ==================================================================-->
-                <div class="lcars-column u-1-8">
+                <div id="status-nav" class="lcars-column u-1-8 t-2-8 m-2-8">
                     <ul class="lcars-menu">
                         <li class="lcars-blue-bg tall" id='status-nav1'><a href="#" onclick="statusNav1()">System<br>Status</a></li>
                         <li class="lcars-blue-bg tall" id='status-nav2'><a href="#" onclick="statusNav2()">System<br>Diagnostics</a></li>
                     </ul>
                 </div>
-
                 <!-- STATUS DISPLAY AREA CONTENT
                 ==================================================================-->
-                <div class="lcars-column u-6-8">
+                <div id="status-window" class="lcars-column u-7-8 t-6-8 m-6-8">
                     <iframe id="status-window-frame" src="status_blank.html" height="150px" width="100%" style="border:none;"></iframe>
                 </div>
-
-                <!-- RIGHT MENU RESERVED SPACE 
-                ==================================================================-->
-                <div class="lcars-column u-1-8">
-                    <ul class="lcars-menu right">
-                        <li class="lcars-blue-bg tall" id='status-nav3'><a href="#" onclick="statusNav3()">Enviro<br>Status</a></li>
-                        <li class="lcars-blue-bg tall" id='status-nav4'><a href="#" onclick="statusNav4()">_</a></li>
-                    </ul>
-                </div>
             </div>
-
-
             <!-- BOTTOM BORDER OF STATUS WINDOW 
             ==================================================================-->
             <div class="lcars-row spaced">
                 <!-- BOTTOM LEFT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow left bottom lcars-blue-bg">
+                <div id="status-bottom-left-elbow" class="lcars-column u-1-8 t-2-8 m-2-8 lcars-elbow left bottom lcars-blue-bg">
                     <a href="#"></a>
                 </div>
                 <!-- BOTTOM DIVIDER AND BUTTONS
                 ==================================================================-->
-                <div class="lcars-column u-6-8 lcars-divider bottom lcars-orange-grayBlue-divide">
-                </div>
-                <!-- BOTTOM RIGHT ELBOW
-                ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow right bottom lcars-blue-bg">
-                    <a href="#"></a> 
+                <div id="status-bottom-divider" class="lcars-column u-7-8 t-6-8 m-6-8 lcars-divider bottom lcars-orange-grayBlue-divide">
+                    <div class="lcars-column u-1-1 right full-width text-center-vert text-align-right lcars-peach-color">
+                        <p id="system-time">System Time</p>
+                    </div>                 
                 </div>
             </div>
 
             
             
-
-
+        
             <!-- TOP BORDER OF MAIN WINDOW 
             ==================================================================-->
             <div class="lcars-row spaced">
                 <!-- TOP LEFT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow left top lcars-blue-bg">
+                <div class="lcars-column u-1-8 t-2-8 m-2-8 lcars-elbow left top lcars-blue-bg">
                     <a href="#"></a>
                 </div>
                 <!-- TOP DIVIDER AND BUTTONS
                 ==================================================================-->
-                <div class="lcars-column u-6-8 lcars-divider lcars-white-blue-divide">
+                <div class="lcars-column u-7-8 t-6-8 m-6-8 lcars-divider lcars-white-blue-divide">
                     <div class="lcars-row">
-                        <div class="lcars-column u-1-1 right full-width text-align-right lcars-tan-color">
+                        <div class="lcars-column u-1-1 right full-width text-align-right text-center-vert lcars-tan-color">
                             <p id="main-screen-title"></p>
                         </div>  
                     </div>                      
                 </div>
-                <!-- TOP RIGHT ELBOW
-                ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow right top lcars-blue-bg">
-                    <a href="#"></a> 
-                </div>
             </div>            
-            
-
             <!-- MAIN WINDOW 
             ==================================================================-->
             <div class="lcars-row">
                 <!-- LEFT MENU 
                 ==================================================================-->
-                <div class="lcars-column u-1-8">
+                <div class="lcars-column u-1-8 t-2-8 m-2-8">
                     <ul class="lcars-menu">
                         <li class="lcars-blue-bg tall" id='main-nav1'><a href="#" onclick="mainNav1()">Home</a></li>
                         <li class="lcars-blue-bg tall" id='main-nav2'><a href="#" onclick="mainNav2()">System<br>Control</a></li>
                         <li class="lcars-blue-bg tall" id='main-nav3'><a href="#" onclick="mainNav3()">Crew<br>Status</a></li>
                         <li class="lcars-blue-bg tall" id='main-nav4'><a href="#" onclick="mainNav4()">Enviro<br>Control</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav5'><a href="#" onclick="mainNav5()">Crew<br>Schedule</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav6'><a href="#" onclick="mainNav6()">Security<br>Control</a></li>
                     </ul>
                 </div>
-            
                 <!-- MAIN WINDOW CONTENT
                 ==================================================================-->
-                <div class="lcars-column u-6-8">
-                    <iframe id="main-window-frame" src="main_blank.html" height="310px" width="100%" style="border:none;"></iframe>
-                </div>
-            
-
-                <!-- RIGHT MENU RESERVED SPACE 
-                ==================================================================-->
-                <div class="lcars-column u-1-8">
-                    <ul class="lcars-menu right">
-                        <li class="lcars-blue-bg tall" id='main-nav7'><a href="#" onclick="mainNav7()">Crew<br>Schedule</a></li>
-                        <li class="lcars-blue-bg tall" id='main-nav8'><a href="#" onclick="mainNav8()">Security<br>Control</a></li>
-                        <li class="lcars-blue-bg tall" id='main-nav9'><a href="#" onclick="mainNav9()"></a></li>
-                        <li class="lcars-blue-bg tall" id='main-nav10'><a href="#" onclick="mainNav10()"></a></li>
-                    </ul>
+                <div class="lcars-column u-7-8 t-6-8 m-6-8">
+                    <iframe class="main-window-frame" id="main-window-frame" src="main_blank.html"></iframe>
                 </div>
             </div>            
-            
-
             <!-- BOTTOM BORDER OF MAIN WINDOW 
             ==================================================================-->
             <div class="lcars-row">
                 <!-- BOTTOM LEFT ELBOW
                 ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow left bottom lcars-blue-bg">
+                <div class="lcars-column u-1-8 t-2-8 m-2-8 lcars-elbow left bottom lcars-blue-bg">
                     <a href="#"></a>
                 </div>
                 <!-- BOTTOM DIVIDER AND BUTTONS
                 ==================================================================-->
-                <div class="lcars-column u-6-8 lcars-divider bottom lcars-white-blue-divide">                    
-                </div>
-                <!-- BOTTOM RIGHT ELBOW
-                ==================================================================-->    
-                <div class="lcars-column u-1-8 lcars-elbow right bottom lcars-blue-bg">
-                    <a href="#"></a> 
+                <div class="lcars-column u-7-8 t-6-8 m-6-8 lcars-divider bottom lcars-white-blue-divide">
+                    <div class="lcars-row">
+                    </div>                 
                 </div>
             </div>
             

@@ -11,122 +11,50 @@ var mainWindowMode = (function () {
             document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";            
+            document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
+            document.getElementById('main-nav6').className =  "lcars-blue-bg tall";          
         } else if (state == 2) {
             document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav2').className =  "lcars-orange-bg tall";
             document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";            
+            document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
+            document.getElementById('main-nav6').className =  "lcars-blue-bg tall";          
         } else if (state == 3) {
             document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav3').className =  "lcars-orange-bg tall";
             document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";            
+            document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
+            document.getElementById('main-nav6').className =  "lcars-blue-bg tall";           
         } else if (state == 4) {
             document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav4').className =  "lcars-orange-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";               
+            document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
+            document.getElementById('main-nav6').className =  "lcars-blue-bg tall";            
         } else if (state == 5) {
             document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-orange-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";            
+            document.getElementById('main-nav5').className =  "lcars-orange-bg tall";
+            document.getElementById('main-nav6').className =  "lcars-blue-bg tall";           
         } else if (state == 6) {
             document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-orange-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";                   
-        } else if (state == 7) {
-            document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-orange-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall";    
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";                    
-        } else if (state == 8) {
-            document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-orange-bg tall";
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";            
-        } else if (state == 9) {
-            document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav9').className =  "lcars-orange-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";                       
-        } else if (state == 10) {
-            document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall"; 
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-orange-bg tall";            
+            document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
+            document.getElementById('main-nav6').className =  "lcars-orange-bg tall";        
         } else {
             document.getElementById('main-nav1').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav2').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav3').className =  "lcars-blue-bg tall";
             document.getElementById('main-nav4').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
-            //document.getElementById('main-nav6').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav7').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav8').className =  "lcars-blue-bg tall"; 
-            document.getElementById('main-nav9').className =  "lcars-blue-bg tall";
-            document.getElementById('main-nav10').className = "lcars-blue-bg tall";                       
+            document.getElementById('main-nav5').className =  "lcars-blue-bg tall";
+            document.getElementById('main-nav6').className =  "lcars-blue-bg tall";                       
         };
     };
     pub.getState = function() {
@@ -174,29 +102,6 @@ function mainNav6() {
     playSound('sound/computerbeep_5.mp3');
 }
 
-function mainNav7() {
-    mainWindowMode.changeState(7);
-    mainUpdate7();
-    playSound('sound/computerbeep_5.mp3');
-}
-
-function mainNav8() {
-    mainWindowMode.changeState(8);
-    mainUpdate8();
-    playSound('sound/computerbeep_5.mp3');
-}
-
-function mainNav9() {
-    mainWindowMode.changeState(9);
-    mainUpdate9();
-    playSound('sound/computerbeep_5.mp3');
-}
-
-function mainNav10() {
-    mainWindowMode.changeState(10);
-    mainUpdate10();
-    playSound('sound/computerbeep_5.mp3');
-}
 
 
 // CUSTOM FUNCTIONS FOR SCREEN REFRESH
@@ -206,7 +111,6 @@ function mainUpdate0() {
     if (mainWindowMode.getState() == 0) {
         document.getElementById('main-screen-title').innerHTML = "";
         document.getElementById('main-window-frame').src = "main_blank.html";
-        document.getElementById('main-window-frame').style.height = "310px";
     };
 };
 
@@ -214,7 +118,6 @@ function mainUpdate1() {
     if (mainWindowMode.getState() == 1) {
         document.getElementById('main-screen-title').innerHTML = "";
         document.getElementById('main-window-frame').src = "main_blank.html";
-        document.getElementById('main-window-frame').style.height = "310px";
     };
 };
 
@@ -222,7 +125,6 @@ function mainUpdate2() {
     if (mainWindowMode.getState() == 2) {
         document.getElementById('main-screen-title').innerHTML = "Device Control";
         document.getElementById('main-window-frame').src = "main_control.html";
-        document.getElementById('main-window-frame').style.height = "310px";
     };
 };
 
@@ -230,7 +132,6 @@ function mainUpdate3() {
     if (mainWindowMode.getState() == 3) {
         document.getElementById('main-screen-title').innerHTML = "Crew Status";
         document.getElementById('main-window-frame').src = "main_blank.html";
-        document.getElementById('main-window-frame').style.height = "310px";
     };
 };
 
@@ -238,52 +139,19 @@ function mainUpdate4() {
     if (mainWindowMode.getState() == 4) {
         document.getElementById('main-screen-title').innerHTML = "Environmental Control";
         document.getElementById('main-window-frame').src = "main_blank.html";
-        document.getElementById('main-window-frame').style.height = "310px";
     };
 };
 
 function mainUpdate5() {
     if (mainWindowMode.getState() == 5) {
-        document.getElementById('main-screen-title').innerHTML = "";
+        document.getElementById('main-screen-title').innerHTML = "Crew Schedule";
         document.getElementById('main-window-frame').src = "main_blank.html";
-        document.getElementById('main-window-frame').style.height = "310px";
     };
 };
 
 function mainUpdate6() {
     if (mainWindowMode.getState() == 6) {
-        document.getElementById('main-screen-title').innerHTML = "";
-        document.getElementById('main-window-frame').src = "main_blank.html";
-        document.getElementById('main-window-frame').style.height = "310px";
-    };
-};
-
-function mainUpdate7() {
-    if (mainWindowMode.getState() == 7) {
-        document.getElementById('main-screen-title').innerHTML = "Crew Schedule";
-        document.getElementById('main-window-frame').src = "main_crew_sched.html";
-        document.getElementById('main-window-frame').style.height = "900px";
-    };
-};
-
-function mainUpdate8() {
-    if (mainWindowMode.getState() == 8) {
         document.getElementById('main-screen-title').innerHTML = "Security";
-        document.getElementById('main-window-frame').src = "main_blank.html";
-        document.getElementById('main-window-frame').style.height = "310px";
-    };
-};
-
-function mainUpdate9() {
-    if (mainWindowMode.getState() == 9) {
-        document.getElementById('main-screen-title').innerHTML = "";
-        document.getElementById('main-window-frame').src = "main_blank.html";
-    };
-};
-
-function mainUpdate10() {
-    if (mainWindowMode.getState() == 10) {
-        document.getElementById('main-screen-title').innerHTML = "";
         document.getElementById('main-window-frame').src = "main_blank.html";
     };
 };
