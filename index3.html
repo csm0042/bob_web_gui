@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang-"en-US">
+    <head>
+        <title>Building Operating Bot (B.O.B.)</title>     
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" media="screen and (max-width: 400px)" href="css/lcars3_mobile.css" />
+        <link rel="stylesheet" media="screen and (min-width: 401px) and (max-width: 700px)" href="css/lcars3_tablet.css" />
+        <link rel="stylesheet" media="screen and (min-width: 701px)" href="css/lcars3.css" />
+        
+        <script src="js/index3.js"></script>
+        <script src="js/nav3.js"></script>
+        <script src="js/datetime.js"></script>
+    </head>
+    
+    <body onload="screenRefresh('sound/screenshow.mp3')">
+
+        <!-- TOP BORDER
+        ============================================================= -->
+        <div class="row spaced-bottom bg-black">
+            <div class="header">
+                <div class="col-1 col-t-2 col-m-3 bg-black">
+                    <div class="lcars-elbow left top bg-blue">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-10 col-t-8 col-m-6 lcars-divider lcars-orange-blue-divide">
+                    <div class="row">
+                        <p id="status-screen-title" class="main-window-title">B.O.B. Home Automation System</p>
+                    </div>
+                </div>
+                <div class="col-1 col-t-2 col-m-3 bg-black">
+                    <div class="lcars-elbow right top bg-blue">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MAIN WINDOW
+        ============================================================= -->
+        <div class="row spaced-bottom bg-black">
+            <div class="content">
+                <div class="col-1 col-t-2 col-m-3 bg-glack">
+                    <ul class="lcars-menu">
+                        <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav1()">Home</a></li>
+                        <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav2()">Floor 1</a></li>
+                        <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav3()">Floor 2</a></li>
+                        <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav4()">Sched</a></li>
+                        <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav5()">Env</a></li>
+                        <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav6()">Diag</a></li>
+                    </ul>
+                    <div class="nav-filler-left bg-purple"></div>
+                </div>
+                <div class="col-10 col-t-8 col-m-6 bg-black">
+                    <iframe id="window-frame" class="main-window" src="home.html" height="100%" width="100%" style="border:none;"></iframe>
+                </div>
+                <div class="col-1 col-t-2 col-m-3 bg-black">
+                    <div class="nav-filler-right bg-purple"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- BOTTOM BORDER
+        ============================================================= -->
+        <div class="row spaced-bottom">
+            <footer class="footer">
+                <div class="col-1 col-t-2 col-m-3 bg-black">
+                    <div class="lcars-elbow left bottom bg-blue">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-10 col-t-8 col-m-6 lcars-divider bottom lcars-orange-blue-divide">
+                    <div class="row">
+                        <p id="system-clock" class="main-window-clock">System Clock</p>
+                    </div>
+                </div>
+                <div class="col-1 col-t-2 col-m-3 bg-black">
+                    <div class="lcars-elbow right bottom bg-blue">
+                        <p></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+            
+    </body>
+</html> 

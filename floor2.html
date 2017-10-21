@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang-"en-US">
+    <head>
+        <title>Building Operating Bot (B.O.B.)</title>     
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" media="screen and (max-width: 400px)" href="css/lcars3_mobile.css" />
+        <link rel="stylesheet" media="screen and (min-width: 401px) and (max-width: 700px)" href="css/lcars3_tablet.css" />
+        <link rel="stylesheet" media="screen and (min-width: 701px)" href="css/lcars3.css" />
+
+        <script src="js/index3.js"></script>
+    </head>
+    <body>
+
+
+        <!-- MAIN DISPLAY AREA 
+        ==================================================================-->
+        <div class="row bg-black">
+            <div class="col-12 col-t-12 col-m-12">
+                <img class="floor-img" src="img/first-floor-land.png" />
+            </div>
+        </div>
+        <div class="row bg-black">
+            <div class="col-4 col-t-4 col-m-6">
+                <button type="button" class="lcars-button radius" id="br1lt1-state" onclick="br1lt1.toggleState('br1lt1-state')">BR1LT1</button>
+            </div>
+            <div class="col-4 col-t-4 col-m-6">
+                <button type="button" class="lcars-button radius" id="br2lt1-state" onclick="br2lt1.toggleState('br2lt1-state')">BR2LT1</button>
+            </div>
+            <div class="col-4 col-t-4 col-m-6">
+                <button type="button" class="lcars-button radius" id="br3lt1-state" onclick="br3lt1.toggleState('br3lt1-state')">BR3LT1</button>
+            </div>
+        </div>
+        <div class="row bg-black">
+            <div class="col-4 col-t-4 col-m-6">
+                <button type="button" class="lcars-button radius" id="br1lt2-state" onclick="br1lt2.toggleState('br1lt2-state')">BR1LT2</button>
+            </div>
+            <div class="col-4 col-t-4 col-m-6">
+                <button type="button" class="lcars-button radius" id="br2lt2-state" onclick="br2lt2.toggleState('br2lt2-state')">BR2LT2</button>
+            </div>
+            <div class="col-4 col-t-4 col-m-6">
+                <button type="button" class="lcars-button radius" id="br3lt2-state" onclick="br3lt2.toggleState('br3lt2-state')">BR3LT2</button>
+            </div>
+        </div>                   
+
+    </body>
+</html>

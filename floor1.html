@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang-"en-US">
+    <head>
+        <title>Building Operating Bot (B.O.B.)</title>     
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" media="screen and (max-width: 400px)" href="css/lcars3_mobile.css" />
+        <link rel="stylesheet" media="screen and (min-width: 401px) and (max-width: 700px)" href="css/lcars3_tablet.css" />
+        <link rel="stylesheet" media="screen and (min-width: 701px)" href="css/lcars3.css" />
+
+        <script src="js/index3.js"></script>
+    </head>
+    <body>
+
+
+        <!-- MAIN DISPLAY AREA 
+        ==================================================================-->
+        <div class="row bg-black">
+            <div class="col-12 col-t-12 col-m-12">
+                <img class="floor-img" src="img/first-floor-land.png" />
+            </div>
+        </div>
+        <div class="row bg-black">
+            <div class="col-3 col-t-3 col-m-6">
+                <button type="button" class="lcars-button radius" id="fylt1-state" onclick="fylt1.toggleState('fylt1-state')">FYLT1</button>
+            </div>
+            <div class="col-3 col-t-3 col-m-6">
+                <button type="button" class="lcars-button radius" id="ewlt1-state" onclick="ewlt1.toggleState('ewlt1-state')">EWLT1</button>
+            </div>
+            <div class="col-3 col-t-3 col-m-6">
+                <button type="button" class="lcars-button radius" id="ltlt1-state" onclick="ltlt1.toggleState('ltlt1-state')">LTLT1</button>
+            </div>
+            <div class="col-3 col-t-3 col-m-6">
+                <button type="button" class="lcars-button radius" id="drlt1-state" onclick="drlt1.toggleState('drlt1-state')">DRLT1</button>
+            </div>
+        </div>
+        <div class="row bg-black">
+            <div class="col-3 col-t-3 col-m-6">
+                <button type="button" class="lcars-button radius" id="fylt2-state" onclick="fylt2.toggleState('fylt2-state')">FYLT1</button>
+            </div>
+            <div class="col-3 col-t-3 col-m-6">
+                <button type="button" class="lcars-button radius" id="cclt1-state" onclick="cclt1.toggleState('cclt1-state')">CCLT1</button>
+            </div>
+            <div class="col-3 col-t-3 col-m-6">
+                <button type="button" class="lcars-button radius" id="lrlt2-state" onclick="lrlt2.toggleState('lrlt2-state')">LRLT2</button>
+            </div>
+            <div class="col-3 col-t-3 col-m-6">
+                <button type="button" class="lcars-button radius" id="bylt1-state" onclick="bylt1.toggleState('bylt1-state')">BYLT1</button>
+            </div>
+        </div>                   
+
+    </body>
+</html>

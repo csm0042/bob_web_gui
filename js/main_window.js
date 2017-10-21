@@ -69,37 +69,37 @@ var mainWindowMode = (function () {
 function mainNav1() {
     mainWindowMode.changeState(1);
     mainUpdate1();
-    playSound('sound/computerbeep_5.mp3');
+    //playSound('sound/computerbeep_5.mp3');
 }
 
 function mainNav2() {
     mainWindowMode.changeState(2);
     mainUpdate2();
-    playSound('sound/computerbeep_5.mp3');
+    //playSound('sound/computerbeep_5.mp3');
 }
 
 function mainNav3() {
     mainWindowMode.changeState(3);
     mainUpdate3();
-    playSound('sound/computerbeep_5.mp3');
+    //playSound('sound/computerbeep_5.mp3');
 }
 
 function mainNav4() {
     mainWindowMode.changeState(4);
     mainUpdate4();
-    playSound('sound/computerbeep_5.mp3');
+    //playSound('sound/computerbeep_5.mp3');
 }
 
 function mainNav5() {
     mainWindowMode.changeState(5);
     mainUpdate5();
-    playSound('sound/computerbeep_5.mp3');
+    //playSound('sound/computerbeep_5.mp3');
 }
 
 function mainNav6() {
     mainWindowMode.changeState(6);
     mainUpdate6();
-    playSound('sound/computerbeep_5.mp3');
+    //playSound('sound/computerbeep_5.mp3');
 }
 
 

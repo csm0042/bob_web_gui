@@ -29,13 +29,13 @@ var statusWindowMode = (function () {
 function statusNav1() {
     statusWindowMode.changeState(1);
     statusUpdate1();
-    playSound('sound/computerbeep_5.mp3');
+    //playSound('sound/computerbeep_5.mp3');
 }
 
 function statusNav2() {
     statusWindowMode.changeState(2);
     statusUpdate2();
-    playSound('sound/computerbeep_5.mp3');
+    //playSound('sound/computerbeep_5.mp3');
 }
 
 
