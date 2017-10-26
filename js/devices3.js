@@ -13,11 +13,9 @@ var fylt1 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON';
-            document.getElementById(id).style.background = "#c69"
             setState(id, 'on');
         } else {
             state = 'OFF';
-            document.getElementById(id).style.background = "#f90"
             setState(id, 'off');
         };
         playSound('sound/helm_engage_clean.mp3');
