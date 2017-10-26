@@ -1,9 +1,10 @@
 function wemoLookup(id) {
     var id_sep = id.split("-");
-    var dev_name = id_sep[0];
+    var name = id_sep[0];
     var addr;
+    
 
-    switch(dev_name) {
+    switch(name) {
         case "fylt1":
             addr = "192.168.86.21";
             break;
@@ -13,7 +14,7 @@ function wemoLookup(id) {
         case "bylt1":
             addr = "192.168.86.22";
             break;
-        case "ewlt2":
+        case "ewlt1":
             addr = "192.168.86.23";
             break;
         case "cclt1":
@@ -47,15 +48,15 @@ function wemoLookup(id) {
             addr = "192.168.86.32";
             break;                            
     }
-    return dev_name, addr;
+    return [name, addr];
 }
 
 
 // Ajax call to a PHP script on server which sets device state commands in a database
 function setState(id, state) {
-    var dev_name;
-    var dev_addr;
-    dev_name, dev_addr = wemoLookup(id);
+    var result = wemoLookup(id);
+    var dev_name = result[0]
+    var dev_addr = result[1]
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -64,54 +65,52 @@ function setState(id, state) {
             window.alert(this.responseText);
 
             if (this.responseText.search(/on/i) != -1 || this.responseText == '1') {
-                document.getElementById(id).style.background = "rgb(33, 193, 23)";
+                document.getElementById(id).style.background = "#c69";
             };
 
             if ((this.responseText.search(/off/i) != -1 && this.responseText.search(/offline/i) == -1) || this.responseText.search(/0/i) != -1) {
-                document.getElementById(id).style.background = "rgb(192, 192, 192)";
+                document.getElementById(id).style.background = "#f90";
             };
 
             if (this.responseText.search(/offline/i) != -1 || this.responseText.search(/error/i) != -1) {
                 document.getElementById(id).style.background = "rgb(255, 0, 0)";
             };
-        }
+        };
     };
     // USING PHP APPROACH VIA DATABASE
-    var url = "php/set_state.php?";
+    var url = "php/set_state_socket.php?";
     xhttp.open("POST", url, true); 
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send("devname=" + id_sep[0] + "&devcmd=" + state);
-
-    // USING PYTHON APPROACH WITH DIRECT MSG TO DEVICE
-    //var url = "cgi-bin/wemo_set_state.py?";
-    //xhttp.open("POST", url + "devname=" + dev_name + + "&devaddr=" + dev_addr + "&devcmd=" + state, true);
-    //xhttp.send();
-}
+    xhttp.send("devname=" + dev_name + "&devcmd=" + state);
+};
 
 
 // Ajax call to a PHP script on server to get current device state from database
 function getState(id) {
-    var id_sep = id.split("-");
+    var result = wemoLookup(id);
+    var dev_name = result[0]
+    var dev_addr = result[1]
+
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             // Search result for keywords
 
             if (this.responseText.search(/on/i) != -1 || this.responseText == '1') {
-                document.getElementById(id).style.background = "rgb(33, 193, 23)";
+                document.getElementById(id).style.background = "#c69";
             };
 
             if ((this.responseText.search(/off/i) != -1 && this.responseText.search(/offline/i) == -1) || this.responseText.search(/0/i) != -1) {
-                document.getElementById(id).style.background = "rgb(192, 192, 192)";
+                document.getElementById(id).style.background = "#f90";
             };
 
             if (this.responseText.search(/offline/i) != -1 || this.responseText.search(/error/i) != -1) {
                 document.getElementById(id).style.background = "rgb(255, 0, 0)";
             };
-        }
+        };
     };
     var url = "php/get_state.php?";   
     xhttp.open("POST", url, true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send("devname=" + id_sep[0]);    
-}
+    xhttp.send("devname=" + dev_name);
+};
