@@ -59,37 +59,37 @@ function nav6() {
 
 function update1() {
     if (mainWindowMode.getState() == 1) {
-        document.getElementById('window-frame').src = "home.html";
+        document.getElementById('window-frame').src = "mobile_home.html";
     };
 };
 
 function update2() {
     if (mainWindowMode.getState() == 2) {
-        document.getElementById('window-frame').src = "floor1.html";
+        document.getElementById('window-frame').src = "mobile_floor1.html";
     };
 };
 
 function update3() {
     if (mainWindowMode.getState() == 3) {
-        document.getElementById('window-frame').src = "floor2.html";
+        document.getElementById('window-frame').src = "mobile_floor2.html";
     };
 };
 
 function update4() {
     if (mainWindowMode.getState() == 4) {
-        document.getElementById('window-frame').src = "sched.html";
+        document.getElementById('window-frame').src = "mobile_sched.html";
     };
 };
 
 function update5() {
     if (mainWindowMode.getState() == 5) {
-        document.getElementById('window-frame').src = "env.html";
+        document.getElementById('window-frame').src = "movile_env.html";
     };
 };
 
 function update6() {
     if (mainWindowMode.getState() == 6) {
-        document.getElementById('window-frame').src = "diag.html";
+        document.getElementById('window-frame').src = "mobile_diag.html";
     };
 };
 

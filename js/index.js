@@ -10,6 +10,6 @@ function playSound(sound) {
 // Home screen refresh
 // ==========================================================
 function screenRefresh(sound) {
-    systemClock('system-time');
+    systemClock('system-clock');
     playSound(sound);
 }
