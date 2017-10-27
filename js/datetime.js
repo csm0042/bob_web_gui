@@ -1,5 +1,3 @@
-//
-
 // System Date and Time
 function systemClock(id) {
     setInterval(function() {

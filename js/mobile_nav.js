@@ -92,3 +92,8 @@ function update6() {
         document.getElementById('window-frame').src = "diag.html";
     };
 };
+
+
+
+
+

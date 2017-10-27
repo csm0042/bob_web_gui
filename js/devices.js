@@ -12,13 +12,13 @@ var fylt1 = (function () {
     };
     pub.toggleState = function(id) {
         if (state == 'OFF') {
-            state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            state = 'ON';
+            setState(id, 'on');
         } else {
-            state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
-        
+            state = 'OFF';
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -38,11 +38,12 @@ var fylt2 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -62,11 +63,12 @@ var ewlt1 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -86,11 +88,12 @@ var cclt1 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -110,11 +113,12 @@ var lrlt1 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -134,11 +138,12 @@ var lrlt2 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -158,11 +163,12 @@ var drlt1 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -182,11 +188,12 @@ var bylt1 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -206,11 +213,12 @@ var br1lt1 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -230,11 +238,12 @@ var br1lt2 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -254,11 +263,12 @@ var br2lt1 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -278,11 +288,12 @@ var br2lt2 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -302,11 +313,12 @@ var br3lt1 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
@@ -326,11 +338,13 @@ var br3lt2 = (function () {
     pub.toggleState = function(id) {
         if (state == 'OFF') {
             state = 'ON'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-orange-bg'
+            setState(id, 'on');
         } else {
             state = 'OFF'
-            document.getElementById(id).className = 'lcars-button radius fixed-size lcars-white-bg'
-        }
+            setState(id, 'off');
+        };
+        playSound('sound/helm_engage_clean.mp3');
     };
     return pub; // expose externally
 }());
+

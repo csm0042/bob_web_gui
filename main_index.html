@@ -4,25 +4,22 @@
         <title>Building Operating Bot (B.O.B.)</title>     
         <meta charset="UTF-8">   
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="fonts/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" media="screen and (max-width: 400px)" href="css/lcars_mobile.css" />
-        <link rel="stylesheet" media="screen and (min-width: 401px) and (max-width: 700px)" href="css/lcars_tablet.css" />
-        <link rel="stylesheet" media="screen and (min-width: 701px)" href="css/lcars.css" />
+        <link rel="stylesheet" media="screen and (max-width: 400px)" href="css/main_lcars_mobile.css" />
+        <link rel="stylesheet" media="screen and (min-width: 401px) and (max-width: 700px)" href="css/main_lcars_tablet.css" />
+        <link rel="stylesheet" media="screen and (min-width: 701px)" href="css/main_lcars.css" />
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script src="js/index.js"></script>
-        <script src="js/status_window.js"></script>
-        <script src="js/main_window.js"></script>
+        <script src="js/main_nav.js"></script>
         <script src="js/datetime.js"></script>
+
     </head>
     
     <body onload="screenRefresh('sound/screenshow.mp3')">
 
         <div class="lcars-container">
             
-            <!-- TOP BORDER OF STATUS WINDOW 
+            <!-- TOP BORDER OF STATUS WINDOW
             ==================================================================-->
             <div class="lcars-row spaced">
                 <!-- TOP LEFT ELBOW
@@ -54,7 +51,7 @@
                 <!-- STATUS DISPLAY AREA CONTENT
                 ==================================================================-->
                 <div id="status-window" class="lcars-column u-7-8 t-6-8 m-6-8">
-                    <iframe id="status-window-frame" src="status_blank.html" height="150px" width="100%" style="border:none;"></iframe>
+                    <iframe id="status-window-frame" src="main_status_blank.html" height="150px" width="100%" style="border:none;"></iframe>
                 </div>
             </div>
             <!-- BOTTOM BORDER OF STATUS WINDOW 
@@ -77,7 +74,7 @@
             
             
         
-            <!-- TOP BORDER OF MAIN WINDOW 
+            <!-- TOP BORDER OF MAIN WINDOW 1
             ==================================================================-->
             <div class="lcars-row spaced">
                 <!-- TOP LEFT ELBOW
@@ -113,7 +110,63 @@
                 <!-- MAIN WINDOW CONTENT
                 ==================================================================-->
                 <div class="lcars-column u-7-8 t-6-8 m-6-8">
-                    <iframe class="main-window-frame" id="main-window-frame" src="main_blank.html"></iframe>
+                    <iframe class="main-window-frame" id="main-window-frame" src="main_home.html"></iframe>
+                </div>
+            </div>            
+            <!-- BOTTOM BORDER OF MAIN WINDOW 
+            ==================================================================-->
+            <div class="lcars-row spaced">
+                <!-- BOTTOM LEFT ELBOW
+                ==================================================================-->    
+                <div class="lcars-column u-1-8 t-2-8 m-2-8 lcars-elbow left bottom lcars-blue-bg">
+                    <a href="#"></a>
+                </div>
+                <!-- BOTTOM DIVIDER AND BUTTONS
+                ==================================================================-->
+                <div class="lcars-column u-7-8 t-6-8 m-6-8 lcars-divider bottom lcars-white-blue-divide">
+                    <div class="lcars-row-spaced">
+                    </div>                 
+                </div>
+            </div>
+
+
+            <!-- TOP BORDER OF MAIN WINDOW 2
+            ==================================================================-->
+            <div class="lcars-row spaced">
+                <!-- TOP LEFT ELBOW
+                ==================================================================-->    
+                <div class="lcars-column u-1-8 t-2-8 m-2-8 lcars-elbow left top lcars-blue-bg">
+                    <a href="#"></a>
+                </div>
+                <!-- TOP DIVIDER AND BUTTONS
+                ==================================================================-->
+                <div class="lcars-column u-7-8 t-6-8 m-6-8 lcars-divider lcars-white-blue-divide">
+                    <div class="lcars-row-spaced">
+                        <div class="lcars-column u-1-1 right full-width text-center-vert lcars-tan-color">
+                            <p id="main-screen-title-2"></p>
+                        </div>  
+                    </div>                      
+                </div>
+            </div>            
+            <!-- MAIN WINDOW 
+            ==================================================================-->
+            <div class="lcars-row">
+                <!-- LEFT MENU 
+                ==================================================================-->
+                <div class="lcars-column u-1-8 t-2-8 m-2-8">
+                    <ul class="lcars-menu">
+                        <li class="lcars-blue-bg tall" id='main-nav1-2'><a href="#" onclick="mainNav1_2()">Home</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav2-2'><a href="#" onclick="mainNav2_2()">Lights</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav3-2'><a href="#" onclick="mainNav3_2()">Crew</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav4-2'><a href="#" onclick="mainNav4_2()">Enviro</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav5-2'><a href="#" onclick="mainNav5_2()">Schedule</a></li>
+                        <li class="lcars-blue-bg tall" id='main-nav6-2'><a href="#" onclick="mainNav6_2()">Security</a></li>
+                    </ul>
+                </div>
+                <!-- MAIN WINDOW CONTENT
+                ==================================================================-->
+                <div class="lcars-column u-7-8 t-6-8 m-6-8">
+                    <iframe class="main-window-frame" id="main-window-frame-2" src="main_home.html"></iframe>
                 </div>
             </div>            
             <!-- BOTTOM BORDER OF MAIN WINDOW 
