@@ -89,7 +89,7 @@ function update5() {
 
 function update6() {
     if (mainWindowMode.getState() == 6) {
-        document.getElementById('window-frame').src = "mobile_diag.html";
+        document.getElementById('window-frame').src = "mobile_subframe.html";
     };
 };
 

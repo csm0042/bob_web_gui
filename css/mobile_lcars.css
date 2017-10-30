@@ -328,6 +328,13 @@ ul.lcars-menu li a {
     margin-left: 2px;
 }
 
+.nav-filler-left-full {
+    height: calc(100vh - 50px - 50px - 25px);
+    min-height: calc((6 * 60px) + (6 * 5px));
+    margin-right: 1.5em;
+    margin-left: 2px;
+}
+
 .nav-filler-right {
     height: calc(100vh - 50px - 50px - 25px);
     min-height: calc((6 * 60px) + (6 * 5px));
