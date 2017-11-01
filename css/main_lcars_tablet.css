@@ -1891,3 +1891,10 @@ a.lcars-button .lcars-button-addition {
     width: 100%;
     border: none;
 }
+
+.center-img {
+    height: calc(100vh * 0.75);
+    border: none;
+    display: block;
+    margin: auto auto;
+}

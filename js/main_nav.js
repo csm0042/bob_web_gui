@@ -221,7 +221,7 @@ function mainUpdate5() {
 function mainUpdate6() {
     if (mainWindowMode.getState() == 6) {
         document.getElementById('main-screen-title').innerHTML = "Security";
-        document.getElementById('main-window-frame').src = "main_home.html";
+        document.getElementById('main-window-frame').src = "mobile_subframe.html";
     };
 };
 
@@ -385,6 +385,6 @@ function mainUpdate5_2() {
 function mainUpdate6_2() {
     if (mainWindowMode2.getState() == 6) {
         document.getElementById('main-screen-title-2').innerHTML = "Security";
-        document.getElementById('main-window-frame-2').src = "main_home.html";
+        document.getElementById('main-window-frame-2').src = "mobile_subframe.html";
     };
 };

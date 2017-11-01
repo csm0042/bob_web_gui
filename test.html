@@ -4,17 +4,9 @@
         <title>Building Operating Bot (B.O.B.)</title>     
         <meta charset="UTF-8">   
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/mobile_lcars_mobile.css" />
-        <link rel="stylesheet" media="screen and (min-width: 501px) and (max-width: 1000px)" href="css/mobile_lcars_tablet.css" />
-        <link rel="stylesheet" media="screen and (min-width: 1001px)" href="css/mobile_lcars.css" />
-        
+        <link rel="stylesheet" href="css/mobile_lcars.css" />       
         <script src="js/index.js"></script>
-        <script src="js/mobile_nav.js"></script>
         <script src="js/datetime.js"></script>
-        <script src="js/ajax.js"></script>
-        <script src="js/devices.js"></script>
-        
     </head>
     
     <body onload="screenRefresh('none')">
@@ -25,12 +17,12 @@
             ============================================================= -->
             <div class="header">
                 <div class="row bg-black">
-                    <div class="col-1 col-t-2 col-m-3 bg-black">
+                    <div class="col-1 col-t-1 col-m-1 bg-black">
                         <div class="lcars-elbow left top bg-blue">
                             <p></p>
                         </div>
                     </div>
-                    <div class="col-10 col-t-9 col-m-8 lcars-divider lcars-orange-blue-divide">
+                    <div class="col-10 col-t-10 col-m-10 lcars-divider lcars-orange-blue-divide">
                         <div class="row">
                             <p id="status-screen-title" class="main-window-title">Frame Title</p>
                         </div>
@@ -48,7 +40,7 @@
             ============================================================= -->
             <div class="content">
                 <div class="row bg-black">
-                    <div class="col-1 col-t-2 col-m-3 bg-black">
+                    <div class="col-1 col-t-1 col-m-1 bg-black">
                         <div class="nav-bar-left bg-blue">
                             <div class="bg-black">
                                 <ul class="lcars-menu">
@@ -62,14 +54,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-10 col-t-9 col-m-8 bg-black">
-                        <iframe id="window-frame" class="center-frame" src="mobile_home.html"></iframe>
+                    <div class="col-10 col-t-10 col-m-10 bg-black">
+                        <img class="center-img" src="img/starfleet-restricted-access.jpg" />
                     </div>
                     <div class="col-1 col-t-1 col-m-1 bg-black">
                         <div class="nav-bar-right bg-blue">
                             <div class="bg-black">
                                 <ul class="lcars-menu">
-
+                                    <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav1()">Home</a></li>
+                                    <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav2()">Floor 1</a></li>
+                                    <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav3()">Floor 2</a></li>
+                                    <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav4()">Sched</a></li>
+                                    <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav5()">Env</a></li>
+                                    <li class="tall bg-blue spaced-bottom"><a href="#" onclick="nav6()">Diag</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -77,18 +74,17 @@
                 </div>
             </div>
 
-
             <!-- BOTTOM BORDER
             ============================================================= -->
             <div class="footer">
                 <div class="row bg-black">
                 
-                    <div class="col-1 col-t-2 col-m-3 bg-black">
+                    <div class="col-1 col-t-1 col-m-1 bg-black">
                         <div class="lcars-elbow left bottom bg-blue">
                             <p></p>
                         </div>
                     </div>
-                    <div class="col-10 col-t-9 col-m-8 lcars-divider bottom lcars-orange-blue-divide">
+                    <div class="col-10 col-t-10 col-m-10 lcars-divider bottom lcars-orange-blue-divide">
                         <div class="row">
                             <p id="system-clock" class="main-window-clock">System Clock</p>
                         </div>
@@ -100,6 +96,6 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </body>
-</html> 
+</html>

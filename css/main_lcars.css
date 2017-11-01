@@ -1889,4 +1889,12 @@ a.lcars-button .lcars-button-addition {
     height: 480px;
     width: 100%;
     border: none;
+    margin: auto auto;
+}
+
+.center-img {
+    height: calc(100vh * 0.75);
+    border: none;
+    display: block;
+    margin: auto auto;
 }

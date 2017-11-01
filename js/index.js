@@ -11,5 +11,7 @@ function playSound(sound) {
 // ==========================================================
 function screenRefresh(sound) {
     systemClock('system-clock');
-    playSound(sound);
+    if (sound != 'none') {
+        playSound(sound);
+    }
 }
