@@ -62,7 +62,6 @@ function setState(id, state) {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             // Search result for keywords
-            window.alert(this.responseText);
 
             if (this.responseText.search(/on/i) != -1 || this.responseText == '1') {
                 document.getElementById(id).style.background = "#c69";
@@ -95,21 +94,20 @@ function getState(id) {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             // Search result for keywords
-
-            if (this.responseText.search(/on/i) != -1 || this.responseText == '1') {
+            if (this.responseText.search(/,on,/i) != -1 || this.responseText == '1') {
                 document.getElementById(id).style.background = "#c69";
             };
 
-            if ((this.responseText.search(/off/i) != -1 && this.responseText.search(/offline/i) == -1) || this.responseText.search(/0/i) != -1) {
+            if ((this.responseText.search(/,off,/i) != -1 && this.responseText.search(/offline/i) == -1) || this.responseText.search(/0/i) != -1) {
                 document.getElementById(id).style.background = "#f90";
             };
 
-            if (this.responseText.search(/offline/i) != -1 || this.responseText.search(/error/i) != -1) {
+            if (this.responseText.search(/,offline,/i) != -1 || this.responseText.search(/error/i) != -1) {
                 document.getElementById(id).style.background = "rgb(255, 0, 0)";
             };
         };
     };
-    var url = "php/get_state.php?";   
+    var url = "php/get_state_socket.php?";   
     xhttp.open("POST", url, true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send("devname=" + dev_name);

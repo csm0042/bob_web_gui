@@ -7,7 +7,8 @@ var fylt1 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -32,7 +33,8 @@ var fylt2 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -57,7 +59,8 @@ var ewlt1 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -82,7 +85,8 @@ var cclt1 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -107,7 +111,8 @@ var lrlt1 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -132,7 +137,8 @@ var lrlt2 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -157,7 +163,8 @@ var drlt1 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -182,7 +189,8 @@ var bylt1 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -207,7 +215,8 @@ var br1lt1 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -232,7 +241,8 @@ var br1lt2 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -257,7 +267,8 @@ var br2lt1 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -282,7 +293,8 @@ var br2lt2 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -307,7 +319,8 @@ var br3lt1 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -332,7 +345,8 @@ var br3lt2 = (function () {
     pub.changeState = function (newstate) {
         state = newstate;
     };
-    pub.getState = function() {
+    pub.getState = function(id) {
+        state = getState(id);
         return state;
     };
     pub.toggleState = function(id) {
@@ -347,4 +361,22 @@ var br3lt2 = (function () {
     };
     return pub; // expose externally
 }());
+
+
+function refreshDeviceStates() {
+    fylt1.getState('fylt1-state');
+    fylt2.getState('fylt2-state');
+    ewlt1.getState('ewlt1-state');
+    cclt1.getState('cclt1-state');
+    lrlt1.getState('lrlt1-state');
+    lrlt2.getState('lrlt2-state');
+    drlt1.getState('drlt1-state');
+    bylt1.getState('bylt1-state');
+    br1lt1.getState('br1lt1-state');
+    br1lt2.getState('br1lt2-state');
+    br2lt1.getState('br2lt1-state');
+    br2lt2.getState('br2lt2-state');
+    br3lt1.getState('br3lt1-state');
+    br3lt2.getState('br3lt2-state');
+};
 
